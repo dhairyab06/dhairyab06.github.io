@@ -17,6 +17,22 @@ body {
     padding: 0;
 }
 
+/* Global Link Styles for Dark Mode */
+a {
+    color: #60a5fa; 
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:visited {
+    color: #a78bfa; /* Light purple for visited links */
+}
+
+a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
 header {
     background-color: var(--surface-color);
     padding: 4rem 2rem;
@@ -48,18 +64,24 @@ nav {
     border-bottom: 1px solid var(--border);
 }
 
+/* Navigation links override the global styles */
 nav a {
     color: var(--text-secondary);
     text-decoration: none;
     font-weight: 600;
-    transition: color 0.2s;
+    transition: color 0.2s, background-color 0.2s;
     padding: 0.5rem 1rem;
     border-radius: 6px;
+}
+
+nav a:visited {
+    color: var(--text-secondary);
 }
 
 nav a:hover, nav a.active {
     color: var(--bg-color);
     background-color: var(--accent);
+    text-decoration: none;
 }
 
 main {
@@ -78,6 +100,36 @@ h2 {
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
     color: var(--text-primary);
+}
+
+h3 {
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+}
+
+.toc {
+    background: var(--surface-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin: 2rem 0;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toc li {
+    margin-bottom: 1rem;
+}
+
+.quick-facts {
+    background: var(--surface-color);
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent);
+    margin-bottom: 2rem;
+    border-radius: 4px;
 }
 
 .artifact {
@@ -102,8 +154,10 @@ h2 {
     font-style: italic;
 }
 
-.job, .project {
-    margin-bottom: 2rem;
+.job, .project, .goal-block {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed var(--border);
 }
 
 .job-header, .project-header {
@@ -113,14 +167,37 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-.job-header h3, .project-header h3 {
-    margin: 0;
-    color: var(--accent);
-}
-
 .date {
     color: var(--text-secondary);
     font-size: 0.9rem;
+}
+
+.competency-tag {
+    display: inline-block;
+    background: #2563eb;
+    color: #ffffff !important; /* Forces tag text to stay white */
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.competency-tag:hover {
+    text-decoration: none;
+    background: #1d4ed8;
+}
+
+.reflection {
+    background: #1a1a1a;
+    padding: 1rem;
+    border-left: 3px solid #10b981;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+.reflection strong {
+    color: #10b981;
 }
 
 ul {
