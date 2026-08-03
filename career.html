@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhairya Borsiwala | Career & Projects</title>
+    <title>Dhairya Borsiwala | Career</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,16 +17,47 @@
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Me</a>
-        <a href="career.html" class="active">Career & Projects</a>
+        <a href="career.html" class="active">Career</a>
+        <a href="goals.html">Goals & Portfolios</a>
+        <a href="projects.html">Course Projects</a>
     </nav>
 
     <main>
+        <section id="education">
+            <h2>Education & Skills</h2>
+            
+            <div class="job">
+                <div class="job-header">
+                    <h3>Bachelor of Arts in Computer Science</h3>
+                    <span class="date">Expected May 2028</span>
+                </div>
+                <strong>York University | Toronto, ON</strong>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Ontario Secondary School Diploma</h3>
+                    <span class="date">June 2024</span>
+                </div>
+                <strong>[West Humber Collegiate Institute] | Toronto, ON</strong>
+            </div>
+
+            <div class="job">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li><strong>Languages:</strong> Python, Java, C, JavaScript, SQL, HTML, CSS</li>
+                    <li><strong>Systems & Scripting:</strong> Linux, Bash, Powershell, Git, Docker, VMware</li>
+                    <li><strong>Networking & Security:</strong> TCP/IP, DNS, Firewalls, VPN, VLANS, IDS/IPS</li>
+                </ul>
+            </div>
+        </section>
+
         <section id="experience">
             <h2>Experience</h2>
             
             <div class="job">
                 <div class="job-header">
-                    <h3>QA Automation Intern</h3>
+                    <h3>QA Automation Intern </h3>
                     <span class="date">May 2026 – Present</span>
                 </div>
                 <strong>Government of Ontario | Toronto, ON</strong>
@@ -50,38 +81,11 @@
                 </ul>
             </div>
         </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            
-            <div class="project">
-                <div class="project-header">
-                    <h3>Vault Guard</h3>
-                </div>
-                <em>Python, Flask, SQLite</em>
-                <ul>
-                    <li>Built a full-stack password manager with secure client-side AES-GCM encryption and Argon2 authentication, implementing a zero-knowledge style design for protecting sensitive user data.</li>
-                    <li>Designed and optimized a relational SQLite database schema to store encrypted credentials, users, and metadata, supporting fast queries, indexing, and secure data handling.</li>
-                    <li>Developed a feature-rich credential vault and validated security by testing against 10+ simulated malware/keylogging scenarios in a virtual machine, with no plaintext credentials exposed.</li>
-                </ul>
-            </div>
-
-            <div class="project">
-                <div class="project-header">
-                    <h3>Home Lab</h3>
-                </div>
-                <em>Linux, Docker, Tailscale, WireGuard</em>
-                <ul>
-                    <li>Hardened a Fedora-based server orchestrating 15+ Docker services, leveraging SELinux policies to enforce Mandatory Access Control (MAC) and container isolation.</li>
-                    <li>Reduced the external attack surface by implementing a Zero-Trust Network via Tailscale, replacing all vulnerable port forwarding with an encrypted, identity-based WireGuard mesh VPN.</li>
-                    <li>Secured network traffic via a Pi-hole DNS sinkhole, successfully blocking 25% of outbound requests to mitigate telemetry exfiltration and C2-based malware threats.</li>
-                </ul>
-            </div>
-        </section>
     </main>
 
     <footer>
-        <p>Last updated: July 2026 | &copy; 2026 Dhruv. All rights reserved.</p>
+        <p>Dhairya Borsiwala | dhairyaborsiwala@gmail.com</p>
+        <p>Last updated: August 2026 | &copy; 2026 Dhairya Borsiwala. All rights reserved.</p>
     </footer>
 
 </body>
