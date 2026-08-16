@@ -1,0 +1,282 @@
+/* style.css */
+:root {
+    --bg-color: #121212;
+    --surface-color: #1e1e1e;
+    --text-primary: #e0e0e0;
+    --text-secondary: #9ca3af;
+    --accent: #f9fafb; 
+    --border: #374151;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Link Styles for Dark Mode */
+a {
+    color: #60a5fa; 
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:visited {
+    color: #a78bfa;
+}
+
+a:hover {
+    color: #93c5fd;
+    text-decoration: underline;
+}
+
+header {
+    background-color: var(--surface-color);
+    padding: 4rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: var(--text-primary);
+}
+
+header p {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    background: var(--surface-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid var(--border);
+}
+
+nav a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s, background-color 0.2s;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+}
+
+nav a:visited {
+    color: var(--text-secondary);
+}
+
+nav a:hover, nav a.active {
+    color: var(--bg-color);
+    background-color: var(--accent);
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    min-height: 60vh;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+    color: var(--text-primary);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.section-header h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    color: var(--accent);
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #ffffff !important;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+    text-decoration: none;
+}
+
+.toc {
+    background: var(--surface-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    margin: 2rem 0;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.toc li {
+    margin-bottom: 1rem;
+}
+
+.quick-facts {
+    background: var(--surface-color);
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent);
+    margin-bottom: 2rem;
+    border-radius: 4px;
+}
+
+.artifact {
+    background: var(--surface-color);
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    border: 1px solid var(--border);
+}
+
+.artifact img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.artifact p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    text-align: center;
+    margin-top: 1rem;
+    font-style: italic;
+}
+
+/* Tight career spacing */
+.job {
+    margin-bottom: 1.25rem;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.job strong {
+    display: block;
+    margin-top: 0.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.job ul {
+    padding-left: 1.2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0;
+}
+
+.job li {
+    margin-bottom: 0.3rem;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0;
+}
+
+/* Original spacious layout for projects and goals */
+.project, .goal-block {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dashed var(--border);
+}
+
+.project ul, .goal-block ul {
+    padding-left: 1.2rem;
+}
+
+.project li, .goal-block li {
+    margin-bottom: 0.5rem;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.5rem;
+}
+
+.date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.competency-tag {
+    display: inline-block;
+    background: #2563eb;
+    color: #ffffff !important;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.4rem 0.8rem;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
+
+.reflection {
+    background: #1a1a1a;
+    padding: 1rem;
+    border-left: 3px solid #10b981;
+    margin-top: 1rem;
+    border-radius: 4px;
+}
+
+.reflection strong {
+    color: #10b981;
+    display: inline;
+    margin: 0;
+}
+
+.hero-content {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+    border-top: 1px solid var(--border);
+    margin-top: 4rem;
+}

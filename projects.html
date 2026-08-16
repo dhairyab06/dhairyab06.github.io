@@ -1,0 +1,72 @@
+<!-- projects.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhairya Borsiwala | Course Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Dhairya Borsiwala</h1>
+        <p>Computer Science @ York University | QA Automation Intern</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="career.html">Career</a>
+        <a href="goals.html">Goals & Portfolios</a>
+        <a href="projects.html" class="active">Course Projects</a>
+    </nav>
+
+    <main>
+        <section id="projects">
+            <h2>Course Projects & Artifacts</h2>
+            
+            <div class="project">
+                <div class="project-header">
+                    <h3>VaultGuard</h3>
+                </div>
+                <span class="competency-tag">Competency: Critical Thinking & Problem Solving</span>
+                <p><em>Introduction:</em> VaultGuard is a modern, open-source password manager built with Python (Flask) and Bootstrap 5, featuring a robust security dashboard and client-side encryption logic.</p>
+                
+                <div class="reflection">
+                    <p><strong>Retell:</strong> I built a full-stack password manager utilizing AES-GCM encryption for data storage and Argon2 hashing for master password authentication. It includes a smart vault that automatically fetches icons using APIs and assigns a security grade based on password habits.</p>
+                    <p><strong>Relate:</strong> This artifact connects to the COOP 2100 themes of professional credential building and problem-solving. By developing this, I applied complex algorithmic thinking required for securing sensitive data—skills directly transferable to my backend automation testing work.</p>
+                    <p><strong>Reflect:</strong> I learned how challenging it is to implement a true zero-knowledge design. If I were to do this differently, I would shift more of the rendering logic from Jinja2 templates to a dedicated frontend framework like React to improve state management. This project changed my thinking on the vital importance of data portability (CSV/JSON imports) in user-centric software.</p>
+                </div>
+
+                <div class="artifact">
+                    <img src="vaultguard.png" alt="VaultGuard Security Dashboard">
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="project-header">
+                    <h3>Personal Homelab Architecture</h3>
+                </div>
+                <span class="competency-tag">Competency: Collaboration Across Networks & Systems</span>
+                <p><em>Introduction:</em> A multi-node personal server environment utilizing AlmaLinux and Windows 10 IoT to host and monitor internal network services.</p>
+                
+                <div class="reflection">
+                    <p><strong>Retell:</strong> I orchestrated a home lab using an AMD Ryzen laptop as the primary host. I configured Docker to run services like Uptime Kuma, Jellyfin, and a central dashboard, while securing remote access through a Tailscale mesh VPN rather than traditional port forwarding.</p>
+                    <p><strong>Relate:</strong> This hands-on infrastructure setup mirrors the complex deployment environments I navigate daily in my COOP 2100 placement. Understanding how containers, DNS, and secure tunnels operate gives me critical context when running root-cause analysis on pipeline failures.</p>
+                    <p><strong>Reflect:</strong> I learned that optimizing lightweight hardware requires strict resource management. Managing SELinux policies and reverse proxies taught me patience. Moving forward, I will invest more time into automated deployment scripts (like Ansible) rather than manual configurations, as this experience highlighted how quickly undocumented setups become difficult to scale.</p>
+                </div>
+
+                <div class="artifact">
+                    <img src="dockhand.png" alt="Dockhand Dashboard Interface">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Dhairya Borsiwala | dhairyaborsiwala@gmail.com | Last updated: August 2026</p>
+    </footer>
+
+</body>
+</html>
